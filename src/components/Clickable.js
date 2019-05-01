@@ -1,10 +1,11 @@
 import React from "react";
+import { Button } from "reactstrap";
 
-const Clickable = props => (
-  <div>
-    <img src={props.img} alt={props.character} width={100} height={100}/>
-  </div>
-  )
-
-
+const Clickable = props => {
+  return (
+    <Button onClick={()=>props.onClick(props.id)}>
+      <img src={props.img} id={props.id} alt={props.character} width={100} height={100} />
+    </Button>
+  );
+};
 export default Clickable;
