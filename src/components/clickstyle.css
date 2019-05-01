@@ -1,0 +1,7 @@
+/* Very important piece of code for flexbox. With the margin, everything is responsive and takes up equal space and looks like a grid. Without is a boring wasteland. The padding makes the buttons look nicer.*/
+
+.flex-spacer {
+    margin: 2.5%;
+    padding: 2px;
+    background-color: black;
+}

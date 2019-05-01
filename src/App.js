@@ -1,3 +1,5 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./mystyle.css";
 import React, { Component } from "react";
 import { Jumbotron, Container } from "reactstrap";
 import Clickable from "./components/Clickable.js";
@@ -20,10 +22,11 @@ class App extends Component {
 
   // When a Clickable gets clicked...
   /* Check if its ID is included in beenClicked and if...
-  /****** false: Push its ID to beenClicked
-  /****** true: trigger gameOver and reset the game */
+  /** false: Push its ID to beenClicked
+  /** true: trigger a game over and reset the game */
   gotClicked = idClicked => {
-    //If beenClicked[] includes that Clickable's ID, gameOver(reset combo, set highest); otherwise, push that ID to beenClicked[], increment combo, and shuffle()
+    // If beenClicked[] includes that Clickable's ID, game over: (reset combo, set highest)
+    // Otherwise, push that ID to beenClicked[], increment combo, and shuffle()
     if (this.state.beenClicked.includes(idClicked)) {
       console.log("ID has been clicked: GAME OVER");
       // If that combo is greater than highest, record new highest
@@ -38,6 +41,7 @@ class App extends Component {
         beenClicked: []
       });
       // Reset the board with a shuffle!
+      this.shuffle();
     } else {
       console.log("ID has not been clicked: PUSHING TO beenClicked");
       // Recording card has been clicked
@@ -52,33 +56,32 @@ class App extends Component {
     }
   };
 
-  gameOver = () => {
-    console.log("game over bud");
-  };
-
+  // We're going to shuffle our cards a lot.
   shuffle = () => {
-    console.log("shuffling");
+    // Randomly!
     this.state.characters.sort(() => Math.random() - 0.5);
+    // Making sure the change will be reflected on the client's side.
     this.setState({
       characters: this.state.characters
     });
   };
 
-  // Show a Jumbotron with instructions and a randomly sorted array of character images to click
+  // Show a Jumbotron with instructions and a randomly sorted array of character images to click.
   render() {
     return (
       <Container>
         <Jumbotron>
-          <h1>Clicky Game</h1>
+          <h1>Bojack Paparazzi</h1>
           <p>
             Clicking an image gives you a point, but only if you haven't clicked
-            it yet... Try to click 12 in a row!
+            it yet... <p>Try to click all 12 in a row!</p>
           </p>
           <p>
             Combo: {this.state.combo} Highest: {this.state.highest}
           </p>
         </Jumbotron>
         {/* For each character, create a card and track its clicked state */}
+        <div className="d-inline-flex justify-content-center flex-wrap">
         {this.state.characters.map(character => {
           return (
             <Clickable
@@ -90,6 +93,7 @@ class App extends Component {
             />
           );
         })}
+        </div>
       </Container>
     );
   }
