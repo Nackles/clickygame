@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/clickygame/static/css/main.6f8c9e61.chunk.css",
-    "main.js": "/clickygame/static/js/main.708f832a.chunk.js",
-    "main.js.map": "/clickygame/static/js/main.708f832a.chunk.js.map",
-    "runtime~main.js": "/clickygame/static/js/runtime~main.bb8261cb.js",
-    "runtime~main.js.map": "/clickygame/static/js/runtime~main.bb8261cb.js.map",
-    "static/css/2.266e55a5.chunk.css": "/clickygame/static/css/2.266e55a5.chunk.css",
-    "static/js/2.97daf7a9.chunk.js": "/clickygame/static/js/2.97daf7a9.chunk.js",
-    "static/js/2.97daf7a9.chunk.js.map": "/clickygame/static/js/2.97daf7a9.chunk.js.map",
-    "index.html": "/clickygame/index.html",
-    "precache-manifest.d674a47f6f35ef49c6e497b71787a1bf.js": "/clickygame/precache-manifest.d674a47f6f35ef49c6e497b71787a1bf.js",
-    "service-worker.js": "/clickygame/service-worker.js",
-    "static/css/2.266e55a5.chunk.css.map": "/clickygame/static/css/2.266e55a5.chunk.css.map",
-    "static/css/main.6f8c9e61.chunk.css.map": "/clickygame/static/css/main.6f8c9e61.chunk.css.map"
+    "main.css": "/Nackles/clickygame/static/css/main.6f8c9e61.chunk.css",
+    "main.js": "/Nackles/clickygame/static/js/main.d2541234.chunk.js",
+    "main.js.map": "/Nackles/clickygame/static/js/main.d2541234.chunk.js.map",
+    "runtime~main.js": "/Nackles/clickygame/static/js/runtime~main.47c96ad8.js",
+    "runtime~main.js.map": "/Nackles/clickygame/static/js/runtime~main.47c96ad8.js.map",
+    "static/css/2.266e55a5.chunk.css": "/Nackles/clickygame/static/css/2.266e55a5.chunk.css",
+    "static/js/2.97daf7a9.chunk.js": "/Nackles/clickygame/static/js/2.97daf7a9.chunk.js",
+    "static/js/2.97daf7a9.chunk.js.map": "/Nackles/clickygame/static/js/2.97daf7a9.chunk.js.map",
+    "index.html": "/Nackles/clickygame/index.html",
+    "precache-manifest.f7635be1baa1d36a628916edc41e2d22.js": "/Nackles/clickygame/precache-manifest.f7635be1baa1d36a628916edc41e2d22.js",
+    "service-worker.js": "/Nackles/clickygame/service-worker.js",
+    "static/css/2.266e55a5.chunk.css.map": "/Nackles/clickygame/static/css/2.266e55a5.chunk.css.map",
+    "static/css/main.6f8c9e61.chunk.css.map": "/Nackles/clickygame/static/css/main.6f8c9e61.chunk.css.map"
   }
 }
