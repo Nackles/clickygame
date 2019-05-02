@@ -1,7 +1,7 @@
 {
   "name": "clickygame",
   "version": "0.1.0",
-  "homepage": "https://github.com/Nackles/clickygame",
+  "homepage": "https://nackles.github.io/clickygame/",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
